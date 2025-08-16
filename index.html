@@ -1,0 +1,86 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <link rel="stylesheet" href="style.css"> <title>Adilet Website</title>
+  </head>
+  <body>
+      <header>
+        <div class="logo">
+          <img src="ChatGPT Image 15 авг. 2025 г., 00_40_43.png" alt="Zaduak Logo">
+          <span></span>
+        </div>
+        
+        <nav>
+          <a href="#" class="active">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Skills</a>
+          <a href="#">Education</a>
+          <a href="#">Experience</a>
+          <a href="contact.html" class="btn-contact" target="_blank">Contact</a>
+
+          </a>
+        </nav>
+      </header>
+
+      <section class="home">
+          <div class="home-img">
+              <img src="038049ed40e7f1f8406c45ab4f37616d.jpg" alt="">
+          </div>
+          <div class="home-content">
+              <h1>Hi,it's  <span>Ontalap Adilet</span></h1>
+              <h3 class="typing-text">Im a <span></span></h3>
+              <p>"I'm Ontalap Adilet, a 17-year-old tech enthusiast passionate about programming, gaming, and learning new technologies like HTML, CSS, and Python."</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ontalap-adilet-509523351" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+              </a>
+              
+              <a href="https://github.com/zaduakov" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+              </a>
+              
+              <a href="https://x.com/LisnoKorolevsk" target="_blank">
+                  <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              
+              <a href="https://www.instagram.com/zaduakkk?igsh=MWxodjhldm03dGFsaA%3D%3D&utm_source=qr" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              </div>
+              <!-- Кнопка открытия модалки -->
+              <a href="javascript:void(0)" class="btn" onclick="openModal()">Hire me</a>
+          </div>
+      </section>
+      <!-- Модальное окно -->
+      <div id="hireModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Свяжитесь со мной</h2>
+          <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш Email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+      <script>
+      function openModal() {
+        document.getElementById("hireModal").style.display = "block";
+      }
+      function closeModal() {
+        document.getElementById("hireModal").style.display = "none";
+      }
+      window.onclick = function(event) {
+        let modal = document.getElementById("hireModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+  </body>
+  </html>
