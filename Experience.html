@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experience — Zaduak</title>
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --bg-soft: #111;
+      --text: #eaeaea;
+      --muted: #b7b7b7;
+      --accent: #ff2d2d;
+      --ring: rgba(255,45,45,.35);
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .container { width: min(1100px, 92%); margin: auto; }
+    header { padding: 20px 0; text-align: center; }
+    .title { font-size: clamp(28px, 5vw, 44px); font-weight: 900; color: var(--accent); }
+    .section { padding: 28px 0; }
+    h2 { font-size: clamp(22px, 4vw, 32px); margin-bottom: 10px; }
+    .timeline { position: relative; margin: 26px 0; }
+    .timeline::before { content: ""; position: absolute; left: 22px; top: 0; bottom: 0; width: 2px; background: rgba(255,255,255,.12); }
+    .t-item { display: grid; grid-template-columns: 56px 1fr; gap: 14px; margin-bottom: 18px; }
+    .t-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 6px rgba(255,45,45,.15), 0 0 18px var(--ring); margin: 7px 0 0 16px; }
+    .t-card { background: var(--bg-soft); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 16px; }
+    .t-title { font-weight: 800; margin: 0 0 6px; color: var(--accent); }
+    .t-meta { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+    .t-desc { margin: 0; color: #ddd; }
+    footer { padding: 40px 0 60px; color: var(--muted); text-align: center; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="title">Experience</h1>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h2>Опыт работы</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <h3 class="t-title">Frontend Developer — Freelance</h3>
+            <div class="t-meta">2025 – Настоящее время</div>
+            <p class="t-desc">Разработка адаптивных сайтов, работа с HTML, CSS, JavaScript, интеграция с API, оптимизация производительности.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <h3 class="t-title">Стажёр в IT-колледже</h3>
+            <div class="t-meta">2023 – 2025</div>
+            <p class="t-desc">Поддержка учебных проектов, верстка страниц, настройка Git-репозиториев, работа с командой над учебным магазином.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> Zaduak</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
