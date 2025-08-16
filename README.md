@@ -1,0 +1,1 @@
+# zaduak-partfeliyo
